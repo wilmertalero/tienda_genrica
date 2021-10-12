@@ -1,0 +1,54 @@
+body{
+    background: url(../img/FondoAzul.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-section{
+    margin:0 auto;
+    margin-top:5%;
+}
+.card{
+	opacity: .95;
+}
+.card-body{
+    background-color: #d1d3d6;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+label{
+	font-weight: bold;
+}
+
+.nav-tabs .nav-item a:not(.active){
+	background-color: #d1d3d6;
+}
+
+.nav-tabs{
+	border-bottom:0px;
+}
+
+.Menu h1{
+    margin:auto;
+    text-align: center;
+    background: linear-gradient(to bottom left, rgb(92, 92, 224),white);
+    border-bottom: 2px double blue;
+    
+}
+
+.Menu{
+    padding: 0px 0px 10px 0px; /*Top Right Bottom Left*/
+    background: white;
+    border-bottom: 2px inset gray;
+    margin:0px 10px 10px 10px;
+}
+
+nav a{
+    color: black;
+    padding: 5px 78px 5px 78px;
+    text-decoration: none;    
+}
+
+nav a:hover{
+    color: white;
+    background-color: black;
+}

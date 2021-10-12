@@ -1,0 +1,52 @@
+.login{
+    border-left: 25px solid red;
+    border-right: 25px solid red;
+    border-top: 1px solid  red;
+    border-bottom: 1px solid red;
+    border-radius: 15px;
+    background-color: rgb(205, 206, 201);
+    padding: 0px 50px 175px 50px;
+    position: absolute;
+    left: 360px;
+    top: 50px;
+    width: 500px;
+}
+h1{
+    color: red;
+    text-align: center;
+    font-size: 50px;    
+}
+form{
+    position: absolute;
+    margin: auto;
+    left: 150px;
+}
+
+#Boton:hover{
+    cursor: pointer;
+
+}
+body {
+    background-image: url("/img/Tienda.png");
+    background-size:100%;
+}
+
+form input {
+    width: 200px;
+}
+
+#Boton{
+    width: auto;
+    position:relative;
+    left: 95px;
+    background-color: black;
+    color: white;
+    transition-duration: 0.7s;
+    border-radius: 5px;
+}
+
+#Boton:hover{
+    background-color: white;
+    color: black;
+}
+

@@ -1,0 +1,162 @@
+body{
+    background-image: url("/img/FondoAzul.jpg");
+    background-size: 100%;
+    width: auto;
+}
+
+.Menu h1{
+    margin:auto;
+    text-align: center;
+    background: linear-gradient(to bottom left, rgb(92, 92, 224),white);
+    border-bottom: 2px double blue;
+    
+}
+
+.Formulario h1{
+    position: relative;
+    color:white;
+    left: 360px;
+    text-align: center;
+    background-color: rgba(0, 195, 255, 0.2 );
+    width: 200px;
+    border-radius: 10px;
+}
+
+.Menu{
+    padding: 0px 0px 10px 0px; /*Top Right Bottom Left*/
+    background: white;
+    border-bottom: 2px inset gray;
+    margin:0px 10px 10px 10px;
+}
+nav a{
+    color: black;
+    padding: 5px 78px 5px 78px;
+    text-decoration: none;    
+}
+
+nav a:hover{
+    color: white;
+    background-color: black;
+}
+
+nav{
+    display: block;
+    margin-top: 10px;
+}
+
+.Formulario form label{
+    margin-left: 10px;
+}
+
+.Formulario{
+    position: absolute;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 0px 25px 25px 25px;
+    left: 200px;
+    background-color: rgba(130, 130, 138, 0.4);
+}
+
+label {
+    color:white
+}
+
+.Cliente{
+    position: relative;
+    margin: 15px 15px 15px 0px;
+    left: 0px;
+}
+
+.Cliente label{
+    padding: 0px 5px 0px 0px; /*Top Right Bottom Left*/
+}
+
+.Producto label{
+    position: relative;
+    padding: 0px 150px 0px 0px;
+ }
+
+ .codigos{
+    position: relative;
+    top: 0px;
+    left:10px;
+    width: 20px;
+ }
+
+ .nombres{
+    position: relative;
+    top: -63px;
+    left: 295px;
+    
+ }
+
+ .cantidades{
+    position: relative;
+    top: -127px;
+    left:545px;
+  
+ }
+
+ .valores{
+    position: relative;
+    top: -190px;
+    left:745px;
+ }
+
+ .ConsultaProducto{
+     position: absolute;
+     top: 134px;
+     left: 214px;
+ }
+
+ .Totales{
+     position: absolute;
+     top: 220px;
+     left: 655px;
+ }
+
+ #totalventa{
+     position: relative;
+     left: 28px;
+
+ }
+
+ #totaliva{
+    position: relative;
+    left: 39px;
+ }
+
+ #totalconiva{
+    position: relative;
+    left: 12px;
+ }
+
+ .Confirmar{
+     position: relative;
+     top: -165px;
+     left: 530px;
+ }
+
+ #nomProd{
+     left: 30px;
+ }
+
+ #nombre1{
+     width: 225px;
+ }
+
+ #nombre2 {
+    width: 225px;
+ }
+ 
+ #nombre3{
+    width: 225px;
+ }
+
+#nombre2 {
+   width: 225px;
+}
+
+#nombre3{
+   width: 225px;
+}

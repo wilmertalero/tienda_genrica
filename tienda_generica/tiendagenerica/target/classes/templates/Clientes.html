@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title>Clientes</title>
+    <link rel="stylesheet" type="text/css" href="static/css/Clientes.css" th:href="@{/css/Clientes.css}">
+</head>
+
+<body>
+    <div class="Menu">
+        <h1>Tienda Genérica</h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Cerrar Sesion"/>
+        </form>
+        <nav>
+            <a th:href="@{/usuarios}">Usuarios</a>
+            <a th:href="@{/clientes}">Clientes</a>
+            <a th:href="@{/proveedores}">Proveedores</a>
+            <a th:href="@{/productos}">Productos</a>
+            <a th:href="@{/ventas}">Ventas</a>
+            <a th:href="@{/reportes}">Reportes</a>
+        </nav>
+    </div>
+    <div class="Formulario">
+        <form>
+            <h1>Clientes</h1>
+            <label>Cédula</label>
+            <input id="cedula" type="text">
+            <label>Teléfono</label>
+            <input id="telefono" type="text"><br><br>
+            <label>Nombre Completo</label>
+            <input id="nombre" type="text">
+            <label>Correo ElectrÃ³nico</label>
+            <input id="correo" type="email"><br><br>
+            <label>Dirección</label>
+            <input id="direccion" type="text">
+
+            <div class="Botones">
+                <input type="button" value="Consultar">
+                <input type="button" value="Crear">
+                <input type="button" value="Actualizar">
+                <input type="reset" value="Borrar">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

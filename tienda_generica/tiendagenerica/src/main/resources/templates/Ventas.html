@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title>Ventas</title>
+    <link rel="stylesheet" type="text/css" href="static/css/Ventas.css" th:href="@{/css/Ventas.css}">
+</head>
+
+<body>
+    <div class="Menu">
+        <h1>Tienda Genérica</h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Cerrar Sesion"/>
+        </form>
+        <nav>
+            <a th:href="@{/usuarios}">Usuarios</a>
+            <a th:href="@{/clientes}">Clientes</a>
+            <a th:href="@{/proveedores}">Proveedores</a>
+            <a th:href="@{/productos}">Productos</a>
+            <a th:href="@{/ventas}">Ventas</a>
+            <a th:href="@{/reportes}">Reportes</a>
+        </nav>
+    </div>
+    <div class="Formulario">
+        <form>
+            <h1>Ventas</h1>
+            <div class="Cliente">
+                <label>Cédula</label>
+                <input id="cedula" type="number">
+                <input type="button" value="Consultar">
+                <label>Cliente</label>
+                <input id="cliente" type="text">
+                <label>Consecutivo</label>
+                <input id="consecutivo" type="text">
+            </div>
+            <div class="Producto">
+                <label>Cod. Producto</label>
+                <label id="nomProd">Nombre Producto</label>
+                <label>Cant.</label>
+                <label>Valor</label>
+                <div class="codigos">
+                    <input id="codigo1" type="number"><br>
+                    <input id="codigo2" type="number"><br>
+                    <input id="codigo3" type="number"><br>
+                </div>
+                <div class="nombres">
+                    <input type="text" id="nombre1"><br>
+                    <input type="text" id="nombre2"><br>
+                    <input type="text" id="nombre3"><br>
+                </div>
+                <div class="cantidades">
+                    <input id="cantidad1" type="text"><br>
+                    <input id="cantidad2" type="text"><br>
+                    <input id="cantidad3" type="text"><br>
+                </div>
+                <div class="valores">
+                    <input id="valor1" type="text"><br>
+                    <input id="valor2" type="text"><br>
+                    <input id="valor3" type="text"><br>
+                </div>
+                <div class="ConsultaProducto">
+                    <input type="button", value="Consultar" id="consulta1"><br>
+                    <input type="button", value="Consultar" id="consulta2"><br>
+                    <input type="button", value="Consultar" id="consulta3"><br>
+                </div>
+            </div>
+            <div class="Totales">
+                <label>Total Venta</label>
+                <input id="totalventa" type="text"><br>
+                <label>Total IVA</label>
+                <input id="totaliva" type="text"><br>
+                <label>Total con IVA</label>
+                <input id="totalconiva" type="text"><br>
+            </div>
+            <div class="Confirmar">
+                <input type="button" value="Confirmar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+    	<meta charset="utf-8">
+        <title>Login</title>
+        <!--JQUERY-->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    
+	    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	    
+	    <!-- Los iconos tipo Solid de Fontawesome-->
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+	    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	
+	    <!-- Nuestro css-->
+	    <link rel="stylesheet" type="text/css" href="static/css/login.css" th:href="@{/css/login.css}">
+    </head>
+    <body>
+        <div class="login">
+            <h1 title="¡Bienvenidos!">Bienvenidos a la tienda genérica</h1>
+            <form id="formulario" name="Ingreso" th:action="@{/login}" method="post">
+                <label>Usuario&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="text" name="username"><br><br>
+                <label>Contraseña</label>
+                <input type="password" name="password"><br><br>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
+            </form>
+        </div>
+        <div th:if="${param.error}" class="alert alert-danger" role="alert">
+		            Problemas al iniciar sesion verifique usuario y contraseña.
+		</div>
+		<div th:if="${param.logout}" class="alert alert-success" role="alert">
+		            ¡Has cerrado sesion!.
+		</div>
+    </body>
+</html>

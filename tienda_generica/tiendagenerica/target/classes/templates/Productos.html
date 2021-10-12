@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title>Productos</title>
+    <link rel="stylesheet" type="text/css" href="static/css/Productos.css" th:href="@{/css/Productos.css}">
+</head>
+
+<body>
+    <div class="Menu">
+        <h1>Tienda Genérica</h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Cerrar Sesion"/>
+        </form>
+        <nav>
+            <a th:href="@{/usuarios}">Usuarios</a>
+            <a th:href="@{/clientes}">Clientes</a>
+            <a th:href="@{/proveedores}">Proveedores</a>
+            <a th:href="@{/productos}">Productos</a>
+            <a th:href="@{/ventas}">Ventas</a>
+            <a th:href="@{/reportes}">Reportes</a>
+        </nav>
+    </div>
+    <div class="Formulario">
+        <form>
+            <h1>Productos</h1>
+            <label>Nombre del Archivo</label>
+            <input type="file">
+            <div class="Botones">
+                <input type="button" value="Cargar">                
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

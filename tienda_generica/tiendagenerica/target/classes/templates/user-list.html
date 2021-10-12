@@ -1,0 +1,41 @@
+<div class="table-responsive">
+	<table id="userList" class="table table-bordered table-hover table-striped">
+		<thead class="thead-light">
+		<tr>
+			<th scope="col">Cedula</th>
+			<th scope="col">E-mail</th>
+			<th scope="col">Estado</th>
+			<th scope="col">contraseña</th>
+			<th scope="col">Usuario</th>
+			<th></th>
+		</tr>
+		</thead>
+		<tbody>
+		<!-- para poder acceder a userList enviado desde el appController se deben de generar los getter
+		and setters en la clase user.java, si no se generan este codigo sera inutilizable -->
+		<tr th:each="user: ${userList}">
+			<td th:text="${user.cedula_usuario}"></td>
+			<td th:text="${user.email_usuario}"></td>
+			<td th:text="${user.enabled}"></td>
+			<td th:text="${user.password}"></td>
+			<td th:text="${user.username}"></td>
+			<td>
+					<a href="#" th:href="@{'/editUser/'+ ${user.cedula_usuario}}"><i class="fas fa-edit"></i></a>
+					| <a href="#" th:onclick="'javascript:confirmDelete(\''+ ${user.cedula_usuario} +'\');'"><i class="fas fa-user-times"></i></a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<div class="alert-danger" th:if="${listErrorMessage}" th:text="${listErrorMessage}">Error MEssage</div>
+</div>
+<script type="text/javascript">
+function confirmDelete(cedula_usuario){
+	$('#deleteModal').modal('show');
+	$("#userIdHiddenInput").val(cedula_usuario);
+}
+
+function deleteUser(){
+	var cedula_usuario = $("#userIdHiddenInput").val();
+    window.location = "deleteUser/"+cedula_usuario;
+}
+</script>
